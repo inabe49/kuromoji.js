@@ -57,6 +57,10 @@ BrowserDictionaryLoader.prototype.loadArrayBuffer = function (url, callback) {
     xhr.send();
 };
 
+BrowserDictionaryLoader.prototype.join = function (dic_path, filename) {
+    throw new Error("DictionaryLoader#join should be overwrite");
+};
+
 /**
  * Callback
  * @callback BrowserDictionaryLoader~onLoad
