@@ -58,7 +58,7 @@ BrowserDictionaryLoader.prototype.loadArrayBuffer = function (url, callback) {
 };
 
 BrowserDictionaryLoader.prototype.join = function (dic_path, filename) {
-    throw new Error("DictionaryLoader#join should be overwrite");
+    return (new URL(filename, dic_path)).href;
 };
 
 /**
